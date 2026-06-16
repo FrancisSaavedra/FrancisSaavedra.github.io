@@ -200,6 +200,14 @@
         display: block;
       }
 
+      .certificate-image {
+        width: 100%;
+        max-width: 420px;
+        border-radius: 1rem;
+        display: block;
+        object-fit: cover;
+      }
+
       .project-card {
         display: grid;
         gap: 1.5rem;
@@ -246,6 +254,10 @@
       @media (min-width: 768px) {
         .project-card {
           grid-template-columns: 320px 1fr;
+        }
+
+        .certification-card {
+          grid-template-columns: 420px 1fr;
         }
       }
 
@@ -315,6 +327,7 @@
           <ul class="navbar-nav ms-auto mb-2 mb-md-0">
             <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
             <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+            <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
             <li class="nav-item"><a class="nav-link" href="#hobbies">Hobbies</a></li>
             <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
             <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
@@ -364,11 +377,26 @@
               <div class="text-secondary">Sto. Tomas, Batangas</div>
               <div class="text-secondary">Bachelor of Science in Information Technology • 2nd Year</div>
             </li>
-            <li class="list-group-item">
-              <div class="fw-semibold">Certification</div>
-              <div class="text-secondary">NC2 Passer</div>
-            </li>
           </ul>
+        </div>
+      </section>
+
+      <section id="certifications" class="py-4">
+        <div class="container neo p-4 p-md-5">
+          <h2 class="h3 fw-bold mb-4">Certifications</h2>
+          <div class="project-card certification-card neo-inset p-4">
+            <img
+              src="assets/nc2-certification.jpg"
+              alt="NC2 certification photo"
+              class="certificate-image neo"
+            />
+            <div>
+              <h3 class="h4 fw-semibold mb-3">NC2 Certification</h3>
+              <p class="text-secondary mb-0">
+                During my 2nd year as a senior high school I received my National Certificate 2.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
